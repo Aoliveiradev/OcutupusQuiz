@@ -9,6 +9,12 @@ const styles = StyleSheet.create({
     justifyContent: "space-between",
     marginTop: 25,
   },
+  ImageBackground: {
+    flex: 1,
+    width: "100%",
+    marginTop: 70,
+    marginBottom: 20,
+   },
 
   image: {
     flex: 1,
@@ -16,7 +22,7 @@ const styles = StyleSheet.create({
     width: "90%",
     marginTop: 70,
     marginBottom: 20,
-    borderRadius: 50,
+    borderRadius: 70,
   },
   container: {
     flex: 1,
@@ -160,5 +166,6 @@ const styles = StyleSheet.create({
     marginTop: 15,
     backgroundColor: "#ffff",
   },
+ 
 });
 export default styles;
