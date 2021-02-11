@@ -129,7 +129,7 @@ export default function Quiz({ navigation }) {
           divideEnabled={true}
           indicatorColor="green"
           tooltipColor="black"
-          duration={10000}
+          duration={100000}
         />
           </View>
         
