@@ -101,7 +101,7 @@ const styles = StyleSheet.create({
     borderRadius: 50,
     borderColor: "#00a8f0",
     borderWidth: 1,
-    marginTop: 15,
+    marginTop: 150,
     backgroundColor: "#00a8f0",
   },
   textSignScreen: {
@@ -163,7 +163,7 @@ const styles = StyleSheet.create({
     flexDirection: "row",
     borderColor: "#ffff",
     borderWidth: 1,
-    marginTop: 15,
+    marginTop: 55,
     backgroundColor: "#ffff",
   },
  

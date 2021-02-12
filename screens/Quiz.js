@@ -135,7 +135,7 @@ export default function Quiz({ navigation }) {
                 countBars={50}
                 radius={50}
                 strokeThickness={2}
-                strokeColor="#030303"
+                strokeColor="#336700"
                 showTooltip={false}
                 trailColor="transparent"
                 showIndicator={false}
