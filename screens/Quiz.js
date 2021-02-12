@@ -1,12 +1,18 @@
 import React, { useState, Component, useEffect } from "react";
 import { render } from "react-dom";
-import { View, Text, Image, ImageBackground, TouchableOpacity, StyleSheet } from "react-native";
+import {
+  View,
+  Text,
+  Image,
+  ImageBackground,
+  TouchableOpacity,
+  StyleSheet,
+} from "react-native";
 import MultipleChoice from "./MultipleChoice";
 import styles from "../Components/Styles";
-import {DashedProgress} from 'react-native-dashed-progress';
+import { DashedProgress } from "react-native-dashed-progress";
 
 export default function Quiz({ navigation }) {
-
   const quizzes = [
     {
       photo: require("../assets/QuizPhotos/quizphoto1.jpg"),
@@ -70,7 +76,7 @@ export default function Quiz({ navigation }) {
     },
     {
       photo: require("../assets/QuizPhotos/quizphoto10.jpg"),
-      question: "EM QUE ANO OCORREU ESTE FATO?",
+      question: "QUANDO OCORREU ESTE FATO?",
       options: ["1989", "1988", "1990", "1998", "2008"],
       answer: 0,
     },
@@ -119,23 +125,28 @@ export default function Quiz({ navigation }) {
   return (
     <View style={styles.container}>
       <View style={styles.container}>
-      <ImageBackground style={styles.ImageBackground} source={quizzes[quiz].photo}>
-        <View style={{left: 200,}}>
-        <DashedProgress
-          fill={100}
-          strokeThickness={2}
-          countBars={100}
-          radius={70}
-          divideEnabled={true}
-          indicatorColor="green"
-          tooltipColor="black"
-          duration={100000}
-        />
-          </View>
-        
-        
+        <ImageBackground
+          style={styles.ImageBackground}
+          source={quizzes[quiz].photo}
+        >
+          <View style={{ left: 270 }}>
+              <DashedProgress
+                fill={50}
+                countBars={50}
+                radius={50}
+                strokeThickness={2}
+                strokeColor="#030303"
+                showTooltip={false}
+                trailColor="transparent"
+                showIndicator={false}
+                duration={6000}
+              
 
-      </ImageBackground>
+
+              />
+            
+          </View>
+        </ImageBackground>
         <View animation="fadeInUpBig" style={styles.footer}>
           <View>
             <Text style={styles.textFooter}>{quizzes[quiz].question}</Text>
@@ -151,13 +162,12 @@ export default function Quiz({ navigation }) {
             />
 
             <View style={styles.buttonbox}>
-             
               <View style={styles.buttonStart}>
                 <TouchableOpacity onPress={() => navigation.goBack(null)}>
                   <Text style={styles.textSign}>Voltar</Text>
                 </TouchableOpacity>
               </View>
-              
+
               <View style={styles.buttonStart}>
                 <TouchableOpacity
                   onPress={() => {
