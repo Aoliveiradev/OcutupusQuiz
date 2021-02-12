@@ -21,8 +21,18 @@ Projeto desenvolvido para [Octupus](https://Octupus.me/).
 
 
 
-## 🛠 Tecnologias
+## 🛠 Desafio
 
+Adicione um cronômetro de 10 minutos. Se o usuário não terminar dentro desse tempo finalizar o quiz e ir para os resultados - OK
+
+Utilizar styled-components para escrever a estilização. 
+
+Gerenciar o estado da aplicação com Redux.
+
+Configurar prettier e eslint no projeto - OK
+
+
+## 🛠 Tecnologias
 As seguintes Lib's foram usadas na construção do projeto:
    
     axios
